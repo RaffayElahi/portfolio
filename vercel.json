@@ -10,13 +10,6 @@
         "use": "@vercel/static"
       }
     ],
-    "redirects": [
-      {
-        "source": "/old-path",
-        "destination": "/new-path",
-        "permanent": true
-      }
-    ],
     "cleanUrls": true,
     "trailingSlash": false,
     "headers": [
