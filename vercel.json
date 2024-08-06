@@ -4,6 +4,10 @@
       {
         "src": "server.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "public/**/*",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
@@ -34,11 +38,6 @@
           }
         ]
       }
-    ],
-    "functions": {
-      "server.js": {
-        "maxDuration": 10
-      }
-    }
+    ]
   }
   
