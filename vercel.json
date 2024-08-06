@@ -6,8 +6,15 @@
         "use": "@vercel/node"
       }
     ],
-    "cleanUrls": true,
-    "trailingSlash": false,
+    "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    }
+    ],
     "headers": [
       {
         "source": "/(.*)",
